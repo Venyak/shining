@@ -1,0 +1,131 @@
+@import ../variables
+
+.main
+  padding-top: 265px
+  margin-bottom: 150px
+
+  &__wrapper
+    display: flex
+
+    *
+      max-width: unset
+
+  &__content
+    width: 582px
+
+  &__slogan
+    margin-bottom: 12px
+    font-size: $mini-text
+    color: $purple
+
+  &__title
+    color: $purple
+    margin-bottom: 30px
+    background: $gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  &__desc
+    font-size: $main-text
+    margin-bottom: 30px
+
+  &__btns
+    display: flex
+    gap: 30px
+
+    *
+      align-self: center
+
+  &__btn-order
+    position: relative
+    font-weight: 700
+    line-height: 22px
+    font-size: 18px
+    text-align: center
+    width: 220px
+    color: $white
+    border-radius: 100px
+    padding: 15px 30px
+    transition: all .25s ease-in-out
+    border: transparent 1px solid
+
+    &:hover
+      .main__btn-order-bg
+        opacity: 0
+
+      +hover-1()
+
+    &-bg
+      z-index: -1
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: $gradient
+      border-radius: 100px
+      opacity: 1
+      transition: opacity .25s ease-in-out
+
+  &__btn-calc
+    position: relative
+    width: 270px
+    border: 1px solid $purple
+    border-radius: 100px
+    text-align: center
+    align-items: center
+    padding: 15px 30px
+    font-size: 18px
+    font-weight: 700
+    color: $purple
+    background: $gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    transition: all .25s ease-in-out
+
+    &-bg
+      z-index: -1
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: $gradient
+      border-radius: 100px
+      opacity: 0
+      transition: opacity .25s ease-in-out
+
+    &:hover
+      +hover-2()
+
+      .main__btn-calc-bg
+        opacity: 1
+
+  &__img
+    width: 343px
+    height: 508px
+    position: relative
+    margin-top: -94px
+    margin-left: 130px
+
+    *
+      position: absolute
+
+    &-girl
+      z-index: 5
+      left: 35px
+
+    &-supplies
+      z-index: 4
+      bottom: 15px
+      left: 190px
+
+    &-stars
+      z-index: 3
+      left: 0
+      bottom: 99px
+
+    &-bg
+      z-index: 2
+      bottom: 30px
+      left: 45px
