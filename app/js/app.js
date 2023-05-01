@@ -1,13 +1,13 @@
 console.log('Все работает!');
 
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-// ScrollSmoother.create({
-//   wrapper: '.wrapper',
-//   content: '.content',
-//   smooth: 0.5,
-//   effects: true,
-// });
+ScrollSmoother.create({
+  wrapper: '.wrapper',
+  content: '.content',
+  smooth: 0.5,
+  effects: true,
+});
 
 const splide = new Splide('.collab__slider', {
   type: 'loop',
