@@ -1,0 +1,106 @@
+@import ../variables
+
+.services
+  margin-bottom: 150px
+
+  &__header
+    display: flex
+    align-items: center
+    gap: 35px
+    margin-bottom: 54px
+
+  &__tabs
+    display: flex
+    gap: 20px
+
+  &__tab
+    cursor: pointer
+    opacity: .5
+    font-size: 20px
+    font-weight: 700
+    line-height: 24px
+    padding: 10px 20px
+    color: $blue
+    border: 1px solid $blue
+    border-radius: 100px
+
+    &.active
+      opacity: 1
+
+  &__content
+    display: none
+
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 255px)
+    gap: 20px
+
+    &.active
+      display: grid
+
+  &__item
+    cursor: pointer
+    border: 1px $purple solid
+    display: flex
+    flex-direction: column
+    padding: 20px
+    transition: all 0.7s cubic-bezier(0,.88,.25,.99)
+
+    &:hover
+      transform: scale(1.1)
+      background-color: $blue
+      border: none
+      color: $white
+
+    &-name
+      margin-bottom: 15px
+      font-size: 20px
+      line-height: 24px
+
+    &-desc
+      margin-bottom: auto
+      font-size: $main-text
+      line-height: 21px
+
+    &-area
+      margin-bottom: 20px
+      font-weight: 700
+
+    &-calc
+      justify-self: center
+      align-self: center
+
+    &-detail
+      width: fit-content
+
+    &-link
+      display: block
+      align-self: center
+      position: relative
+      font-weight: 700
+      line-height: 22px
+      font-size: 18px
+      text-align: center
+      width: 270px
+      color: $white
+      border-radius: 100px
+      padding: 15px 30px
+      transition: all .25s ease-in-out
+      border: transparent 1px solid
+
+      &:hover
+        .services__item-link-bg
+          opacity: 0
+
+        +hover-1()
+
+      &-bg
+        z-index: -1
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: $gradient
+        border-radius: 100px
+        opacity: 1
+        transition: opacity .25s ease-in-out

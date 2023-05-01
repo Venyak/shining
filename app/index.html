@@ -11,7 +11,9 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img src="img/dest/logo.png" alt="Логотип Сияния" class="header__logo">
+      <a href="#" class="header__logo-link">
+        <img src="img/dest/logo.png" alt="Логотип Сияния" class="header__logo">
+      </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
@@ -71,7 +73,7 @@
               <img data-speed="1.2" src="img/dest/woman-intro.png" alt="woman" class="main__img-girl">
               <img data-speed="1.1" src="img/dest/cleaning-supplies-intro.png" alt="cleaning supplies" class="main__img-supplies">
               <img data-speed="1.3" src="img/dest/stars-intro.png" alt="stars" class="main__img-stars">
-              <img data-speed="1" src="img/dest/bg-intro.png" alt="ellipse" class="main__img-bg">
+              <img data-speed=".9" src="img/dest/bg-intro.png" alt="ellipse" class="main__img-bg">
             </div>
           </div>
         </div>
@@ -127,7 +129,198 @@
         </div>
       </section>
       <section class="about">
-        .container.about__container>.about__text>p.about__text-item*2^.about__images>img
+        <div class="container about__container">
+          <h2 class="about__title">Немного о нашей компании</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p class="about__text-item">Уже целый год мы помогаем вам не думать об уборке и провести свободное от неё время в своё удовольствие.</p>
+              <p class="about__text-item">«Сияние» выполняет любые работы по уборке помещений и территорий, несмотря на степень загрязнения. Мы гордимся своими работниками и нашими результатами. Наша работа направлена не только на очищение помещения, но и на сохранение красоты и уюта ваших домов.</p>
+            </div>
+            <div class="about__images">
+              <img data-speed="1.3" src="img/dest/about-guys.png" alt="Работники клининговой компании" class="about__images-guys">
+              <img data-speed="1.1" src="img/dest/about-stars.png" alt="Графические звезды" class="about__images-stars">
+              <img data-speed=".9" src="img/dest/about-bg.png" alt="Эллипс с фиолетовым градиентом" class="about__images-bg">
+          </div>
+          </div>
+          <div class="about__quote">
+            <blockquote class="about__quote-text">
+              В доме главное — чистота и счастье. Мы позаботимся о первом, чтобы освободить для вас больше времени на второе.
+            </blockquote>
+            <p class="about__quote-author">
+              — Павлов Филипп Егорович, Генеральный директор компании «Сияние»
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container services__container">
+          <div class="services__header">
+            <h2 class="services__title">Услуги</h2>
+            <div class="services__tabs">
+              <div class="services__tab active">
+                <p class="services__tab-text">Частные жилые помещения</p>
+              </div>
+              <div class="services__tab">
+                <p class="services__tab-text">Уборка территорий</p>
+              </div>
+            </div>
+          </div>
+          <div class="services__wrapper">
+            <div class="services__content active">
+              <div class="services__item">
+                <h3 class="services__item-name">Генеральная уборка</h3>
+                <p class="services__item-desc">Процесс максимальной очистки квартиры, дома, коттеджа, офиса и пр. объектов от загрязнений.</p>
+                <p class="services__item-area">От 80 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Поддерживающая</h3>
+                <p class="services__item-desc">Поддерживающая уборка подразумевает регулярную уборку с целью поддержания порядка, чистоты и хорошего настроения.</p>
+                <p class="services__item-area">От 45 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Уборка после ремонта</h3>
+                <p class="services__item-desc">Процесс максимальной очистки квартиры, дома, коттеджа, офиса и пр. объектов от загрязнений.</p>
+                <p class="services__item-area">От 100 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Дезинфицирующая обработка</h3>
+                <p class="services__item-desc">Полный комплекс мероприятий по антибактериальной и санитарно-гигиенической обработке объектов любого назначения.</p>
+                <p class="services__item-area">1 000 ₽</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Мытьё окон</h3>
+                <p class="services__item-desc">Мытьё снаружи на высоте в любое время года. Устранение загрязнений различных типов.</p>
+                <p class="services__item-area">500 ₽ за створку</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item-calc">
+                <a href="#" class="services__item-link">
+                  <p class="services__item-link-text">Рассчитать стоимость</p>
+                  <div class="services__item-link-bg"></div>
+                </a>
+              </div>
+            </div>
+            <div class="services__content">
+              <div class="services__item">
+                <h3 class="services__item-name">Ежемесячная уборка офисных центров</h3>
+                <p class="services__item-desc">Процесс максимальной очистки квартиры, дома, коттеджа, офиса и пр. объектов от загрязнений.</p>
+                <p class="services__item-area">от 42 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Ежемесячное обслуживание торговых залов</h3>
+                <p class="services__item-desc">Поддерживающая уборка подразумевает регулярную уборку с целью поддержания порядка, чистоты и хорошего настроения.</p>
+                <p class="services__item-area">От 25 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Разовая уборка торговых залов</h3>
+                <p class="services__item-desc">Процесс максимальной очистки квартиры, дома, коттеджа, офиса и пр. объектов от загрязнений.</p>
+                <p class="services__item-area">От 40 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Ежемесячная уборка розничных магазинов</h3>
+                <p class="services__item-desc">Полный комплекс мероприятий по антибактериальной и санитарно-гигиенической обработке объектов любого назначения.</p>
+                <p class="services__item-area">От 30 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item">
+                <h3 class="services__item-name">Ежемесячное обслуживание сетевых и розничных магазинов</h3>
+                <p class="services__item-desc">Мытьё снаружи на высоте в любое время года. Устранение загрязнений различных типов.</p>
+                <p class="services__item-area">От 55 ₽ м²</p>
+                <p class="services__item-detail">Подробнее</p>
+              </div>
+              <div class="services__item-calc">
+                <a href="#" class="services__item-link">
+                  <p class="services__item-link-text">Рассчитать стоимость</p>
+                  <div class="services__item-link-bg"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calc">
+        <div class="container calc__container">
+          <h2 class="calc__title">Узнать стоимость уборки</h2>
+          <div class="calc__options">
+            <div class="calc__basics">
+                <div class="calc__types-item">
+                  <h3 class="calc__types-title">Тип помещения</h3>
+                  <div class="dropdown" id="area">
+                    <button class="dropdown__btn">Квартира</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">Квартира</li>
+                      <li class="dropdown__list-item" data-value="2">Офис</li>
+                      <li class="dropdown__list-item" data-value="3">Коттедж</li>
+                    </ul>
+                    <input type="text" name="select-category" id="area-type" value="" class="dropdown__input">
+                  </div>
+                </div>
+                <div class="calc__types-item">
+                  <h3 class="calc__types-title">Тип уборки</h3>
+                  <div class="dropdown" id="cleaning">
+                    <button class="dropdown__btn">Уборка после ремонта</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">Уборка после ремонта</li>
+                      <li class="dropdown__list-item" data-value="2">Дезинфицирующая уборка</li>
+                      <li class="dropdown__list-item" data-value="3">Поддерживающая уборка</li>
+                    </ul>
+                    <input type="text" name="select-category" id="cleaning-type" value="" class="dropdown__input">
+                  </div>
+                </div>
+                
+                <div class="calc__area-item">
+                  <h3 class="calc__area-title">Кол-во комнат</h3>
+                  <div class="calc__area-counter">
+                    <button class="calc__counter-minus calc__counter-btn"></button>
+                    <p class="calc__counter-count rooms">0</p>
+                    <button class="calc__counter-plus calc__counter-btn"></button>
+                  </div>
+                </div>
+                <div class="calc__area-item">
+                  <h3 class="calc__area-title">Площадь помещения</h3>
+                  <div class="calc__area-counter">
+                    <button class="calc__counter-minus calc__counter-btn"></button>
+                    <div class="p__wrapper">
+                      <p class="calc__counter-count area">0</p><span> м²</span>
+                    </div>
+                    <button class="calc__counter-plus calc__counter-btn"></button>
+                  </div>
+                </div>
+              
+            </div>
+            <div class="calc__options-add">
+              <h3 class="calc__options-title">Дополнительные услуги</h3>
+              <div class="calc__options-items">
+                <div class="calc__options-windows">
+                  <input class="calc__options-checkbox" type="checkbox" name="windows" value="" id="windows">
+                  <label class="calc__options-label" for="windows">Мойка окон</label>
+                  <div class="calc__area-counter windows">
+                    <button class="calc__counter-minus calc__counter-btn"></button>
+                    <p class="calc__counter-count windows-count">0</p>
+                    <button class="calc__counter-plus calc__counter-btn"></button>
+                  </div>
+                </div>
+                <input class="calc__options-checkbox" type="checkbox" name="disinfection" id="disinfection">
+                <label class="calc__options-label" for="disinfection">Дезинфекция</label>
+              </div>
+            </div>
+            <div class="calc__options-price">
+              <p class="calc__price-text">Стоимость вашей уборки:</p>
+              <p class="calc__price-value">0 ₽</p>
+              <a href="#" class="calc__btn-order">
+                <p class="calc__btn-order-text">Заказать уборку</p>
+                <div class="calc__btn-order-bg"></div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>

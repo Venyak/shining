@@ -1,0 +1,221 @@
+@import ../variables
+
+.calc
+  margin-bottom: 142px
+
+  &__title
+    margin-bottom: 50px
+
+  &__options
+    display: flex
+    justify-content: space-between
+
+    &-windows
+      display: flex
+      justify-content: space-between
+
+    &-title
+      margin-bottom: 22px
+
+    &-items
+      display: flex
+      flex-direction: column
+      gap: 15px
+
+    &-price
+      display: flex
+      flex-direction: column
+      width: 368px
+      border: 1px $purple solid
+      padding: 35px 55px
+      align-items: center
+      gap: 15px
+
+    &-checkbox
+      position: absolute
+      z-index: -1
+      opacity: 0
+
+      transition: all 0.2s ease-in-out
+
+      &~.windows
+        display: none
+
+      &:checked~.windows
+        display: flex
+
+      &:checked+label:before
+        border-width: 8px
+
+      &:checked+label:after
+        opacity: 1
+
+      &+label
+        cursor: pointer
+        position: relative
+        display: inline-flex
+        align-items: center
+        user-select: none
+        transition: all 0.2s ease-in-out
+
+        &::after
+          content: ''
+          background-image: url('../img/dest/checked.svg')
+          top: 50%
+          transform: translateY(-25%)
+          left: 2px
+          background-repeat: no-repeat
+          position: absolute
+          flex-shrink: 0
+          flex-grow: 0
+          display: inline-block
+          width: 1em
+          height: 1em
+          opacity: 0
+          transition: all 0.5s ease-in-out
+
+        &::before
+          content: ''
+          display: inline-block
+          width: 1em
+          height: 1em
+          flex-shrink: 0
+          flex-grow: 0
+          border: 1px solid $blue
+          box-sizing: border-box
+          margin-right: 0.5em
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 50% 50%
+          transition: all 0.2s ease-in-out
+
+  &__price-value
+    font-weight: 700
+    background: linear-gradient(88.69deg, #9E44D8 0.79%, #2540F5 104.97%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+
+  &__btn-order
+    position: relative
+    font-weight: 700
+    line-height: 22px
+    font-size: 18px
+    text-align: center
+    width: 220px
+    color: $white
+    border-radius: 100px
+    padding: 15px 30px
+    transition: all .25s ease-in-out
+    border: transparent 1px solid
+
+    &:hover
+      .calc__btn-order-bg
+        opacity: 0
+
+      +hover-1()
+
+    &-bg
+      z-index: -1
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: $gradient
+      border-radius: 100px
+      opacity: 1
+      transition: opacity .25s ease-in-out
+
+  &__basics
+    display: inline-grid
+    grid-template-columns: auto auto
+    grid-column-gap: 35px
+    grid-row-gap: 30px
+
+  &__types-title, &__area-title
+    margin-bottom: 20px
+
+  &__area-counter
+    display: flex
+    width: fit-content
+    padding: 10px 20px
+    color: $blue
+    border: 1px $blue solid
+    border-radius: 100px
+
+  .p__wrapper
+    display: flex
+    padding: 0 10px
+
+    .calc__counter-count
+      padding: 0
+
+  &__counter-count
+    padding: 0 10px
+
+  &__counter-btn
+    color: $blue
+    font-size: 18px
+    background: none
+    border: 1px $blue solid
+    border-radius: 100px
+    width: 22px
+    height: 22px
+
+  &__counter-minus
+    position: relative
+    transition: background .15s ease-in-out
+
+    &:hover
+      background: $blue
+
+      &::before
+        background-color: $white
+
+    &::before
+      position: absolute
+      display: block
+      margin: 0
+      content: ''
+      width: 10px
+      height: 1px
+      background-color: $blue
+      left: 50%
+      transform: translateX(-50%)
+      transition: background-color .15s ease-in-out
+
+  &__counter-plus
+    position: relative
+    transition: background .15s ease-in-out
+
+    &:hover
+      background: $blue
+
+      &::before, &::after
+        background-color: $white
+
+    &::before
+      position: absolute
+      display: block
+      margin: 0
+      content: ''
+      width: 10px
+      height: 1px
+      background-color: $blue
+      left: 50%
+      transform: translateX(-50%)
+      transition: background-color .15s ease-in-out
+
+    &::after
+      position: absolute
+      display: block
+      margin: 0
+      content: ''
+      width: 10px
+      height: 1px
+      background-color: $blue
+      left: 50%
+      transform: translateX(-50%) rotate(90deg)
+      transition: background-color .15s ease-in-out

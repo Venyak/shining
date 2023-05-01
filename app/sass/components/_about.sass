@@ -1,0 +1,73 @@
+@import ../variables
+
+.about
+  margin-bottom: 156px
+
+  &__title
+    margin-bottom: 50px
+
+  &__content
+    display: flex
+    gap: 56px
+    margin-bottom: 75px
+
+  &__text
+    width: 495px
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+  &__images
+    position: relative
+    width: 547px
+    height: 421px
+
+    *
+      position: absolute
+
+    &-guys
+      z-index: 4
+      left: 120px
+
+    &-stars
+      z-index: 3
+      top: 63px
+      left: 30px
+
+    &-bg
+      z-index: 2
+      top: 95px
+      left: 15px
+
+  &__quote
+    width: 754px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+
+    &-text
+      position: relative
+      padding-left: 32px
+      margin-bottom: 15px
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 24px
+      color: $purple
+      background: $gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+      &::before
+        display: block
+        content: ""
+        width: 30px
+        height: 24px
+        background: url("../img/dest/quote.png")
+
+    &-author 
+      width: 305px
+      margin-right: auto
+      margin-left: auto
+      font-size: $mini-text
